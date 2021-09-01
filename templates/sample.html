@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>common1</h1>
+{% if user.is_authenticated %}
+<h1>before</h1>
+
+<h2>after</h2>
+{% endif %}
+<h1>common2</h1>
+
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block metadescription %}
+    {% if category %}
+       {{category.desc|truncatewords:155}}
+    {% else %}
+       welcome to the cart store where you can buy awesome items...
+    {% endif %}
+{% endblock %}
+{% block title %}
+    {% if category %}
+       {{category.name}}-shop cart
+    {% else %}
+       see our collections-shop cart
+    {% endif %}
+{% endblock %}
+{% block content %}
+
+        <div>
+            <center><img class="my_image my_image_padding" src="{% static 'img/swera.png' %}" alt="" style="width:1350px;height:500px"></center>
+        </div>
+<br>
+<div>
+    <h1 class="text-center my_title">
+        Our Products Collections
+    </h1>
+    <p class="text-justify">
+    Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web browser or a mobile app. ... Online stores usually enable shoppers to use "search" features to find specific models, brands or items.
+    </p>
+</div>
+ <div class="latest-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="{% static 'assets/images/1.jpeg' %}" alt="" style="width:300px;height:300px"></a>
+              <div class="down-content">
+                <a href="#"><h4>Girls full length party dress</h4></a>
+                <h6>$25.75</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (24)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="{% static 'assets/images/2.jpeg' %}" alt="" style="width:300px;height:300px"></a>
+              <div class="down-content">
+                <a href="#"><h4>Long top</h4></a>
+                <h6>$30.25</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (21)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="{% static 'assets/images/3.jpeg' %}" alt="" style="width:300px;height:300px"></a>
+              <div class="down-content">
+                <a href="#"><h4>Men Regular Fit Casual Shirt</h4></a>
+                <h6>$20.45</h6>
+                <p>Sixteen Clothing is free CSS template provided by TemplateMo.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (36)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="{% static 'assets/images/s.jpeg' %}" alt="" style="width:300px;height:300px"></a>
+              <div class="down-content">
+                <a href="#"><h4>Women A-line Black Dress</h4></a>
+                <h6>$15.25</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (48)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="{% static 'assets/images/5.jpeg' %}" alt="" style="width:300px;height:300px"></a>
+              <div class="down-content">
+                <a href="#"><h4>Sports Running Shoes For Men </h4></a>
+                <h6>$12.50</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (16)</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-item">
+              <a href="#"><img src="{% static 'assets/images/a.jpeg' %}" alt="" style="width:300px;height:300px"></a>
+              <div class="down-content">
+                <a href="#"><h4>Women Solid Dark Green Skirt</h4></a>
+                <h6>$22.50</h6>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <ul class="stars">
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <span>Reviews (32)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
